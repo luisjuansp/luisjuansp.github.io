@@ -32,13 +32,6 @@
   <script type="text/javascript">
       Parse.initialize("zOqAoRfkHEVsNaqQqS1qNH23MHLxebk9clwiIKMu", "0k7VChgeMsmPhKZmnFHmSgTCg0qQGUG1k88vtBnf");
       
-      success: function(object) {
-        $(".success").show();
-      },
-      error: function(model, error) {
-        $(".error").show();
-      }
-      });
       var user = new Parse.User();
       user.set("username", "my name");
       user.set("password", "my pass");
