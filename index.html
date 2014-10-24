@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <head>
   <meta charset="utf-8">
 
@@ -39,8 +39,12 @@
   </div>
 
   <script type="text/javascript">
-    Parse.initialize("APPLICATION_ID", "JAVASCRIPT_KEY");
-    
+      Parse.initialize("zOqAoRfkHEVsNaqQqS1qNH23MHLxebk9clwiIKMu", "0k7VChgeMsmPhKZmnFHmSgTCg0qQGUG1k88vtBnf");
+      var TestObject = Parse.Object.extend("TestObject");
+      var testObject = new TestObject();
+      testObject.save({ foo: "bar" }).then(function (object) {
+          alert("yay! it worked");
+      });
     var TestObject = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
       testObject.save({foo: "bar"}, {
