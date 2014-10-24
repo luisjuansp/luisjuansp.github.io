@@ -64,10 +64,6 @@
                 version: 'v2.1'
             });
 
-            FB.login(function (response) {
-                console.log(response);
-            }, { scope: 'user_friends' });
-
             // Now that we've initialized the JavaScript SDK, we call
             // FB.getLoginStatus().  This function gets the state of the
             // person visiting this page and can return one of three states to
@@ -114,8 +110,7 @@
       the FB.login() function when clicked.
     -->
 
-    <div class="fb-login-button" data-scope="public_profile,email" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
-    <button type="button" onclick=FB.login() class="btn btn-primary">Friends</button>
+    <div class="fb-login-button" data-scope="public_profile,email,user_friends" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
     <div id="status">
     </div>
     
