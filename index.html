@@ -64,6 +64,10 @@
                 version: 'v2.1'
             });
 
+            FB.login(function (response) {
+                // handle the response
+            }, { scope: 'public_profile,email,user_friends' });
+
             // Now that we've initialized the JavaScript SDK, we call
             // FB.getLoginStatus().  This function gets the state of the
             // person visiting this page and can return one of three states to
@@ -101,10 +105,6 @@
                   'Thanks for logging in, ' + response.name + '!';
             });
         }
-
-        FB.login(function (response) {
-            // handle the response
-        }, { scope: 'public_profile,email,user_friends' });
 
     </script>
 
