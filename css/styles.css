@@ -38,3 +38,9 @@ body {
     color: green;
     line-height: 13px;
 }
+
+.imgd {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
