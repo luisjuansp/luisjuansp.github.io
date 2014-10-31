@@ -47,11 +47,12 @@ body {
 .social-icon:hover {
     color: rgb(255, 255, 255) !important;
 }
-.facebook {
+a.facebook {
     color: rgb(59, 90, 154) !important;
 }
-.facebook:hover {      
+a.facebook:hover {      
     background-color: rgb(59, 90, 154) !important;
+
 }
 .twitter {
     color: rgb(45, 168, 225) !important;
