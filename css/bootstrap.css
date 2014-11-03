@@ -899,7 +899,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #000;
+  background-color: #fff;
 }
 input,
 button,
@@ -5418,6 +5418,7 @@ button.close {
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 6px;
   outline: 0;
+  color: #fff;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
