@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="images/MadDevsicon.png">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/superhero.css" rel="stylesheet">
+    <link href="css/cyborg.css" rel="stylesheet">
     <title>Adivina Quien</title>
 </head>
 <style>
@@ -16,49 +16,50 @@
     }
 </style>
 <script>
-  $(function() {
-    $( "#board" ).buttonset();
-  });
+    function hide(){
+        this.style.display = 'none';
+    }
+    $('.board-btn').click(function() {
+        $(this).hide();
+    });
 </script>
 <body>
     <h1>Adivina Quien Version MKT</h1>
     <br>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
     <br><br><br>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
     <br><br><br>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
     <br><br><br>
-   <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
+   <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
     <br><br><br>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn">Empresa</button></div>
-    <br><br><br><br>
-    <div class="col-xs-12"><button type="button" class="btn btn-default board-btn">Reset</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
+    <div class="col-xs-2"><button type="button" class="btn btn-default board-btn" onclick="this.style.background = '#333333'">Empresa</button></div>
     
 </body>
 </html>
