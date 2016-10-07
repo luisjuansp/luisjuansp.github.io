@@ -1,0 +1,17 @@
+body {
+	/*background-color: #ffab40;*/
+}
+
+.intro {
+	margin: auto;
+	max-width: 500px;
+}
+
+.selfie{
+	height: 30vh;
+	width: 30vh;
+}
+
+.fixed{
+	position: fixed;
+}

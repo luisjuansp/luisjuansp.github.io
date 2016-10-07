@@ -1,94 +1,320 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="images/MadDevsicon.png">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/superhero.css" rel="stylesheet">
-    <title>MadLowes</title>
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Luis Juan Sanchez Padilla</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-    </div> 
-    <div class="container-fluid">
-        <div class="row">
-            <h1>Luis Juan Sanchez Padilla</h1>
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li role="presentation" class="active"><a href="#Profile" role="tab" data-toggle="tab">Profile</a></li>
-                <li role="presentation"><a href="#ChoiceMaker" role="tab" data-toggle="tab">ChoiceMaker</a></li>
-                <li role="presentation"><a href="#Straws" role="tab" data-toggle="tab">Straws</a></li>
-                <li role="presentation"><a href="#TD" role="tab" data-toggle="tab">Tower Defense</a></li>
-            </ul>
-            <div class="tab-content">
-                 <div role="tabpanel" class="tab-pane fade in active" id="Profile">
-                    <div class="span3 well">
-            <center>
-                <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/1956764_10152476808463506_1406667069536783974_o.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
-                <h3>Luis Juan Sanchez Padilla</h3>
-                <em>click my face for Bio</em>
-            </center>
-        </div>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                        <h4 class="modal-title" id="myModalLabel">More About Luis</h4>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+    <div class="section z-depth-1 orange lighten-1">
+        <table class="intro">
+            <tr>
+                <td class="center-align">
+                    <h3>Hey, I'm Luis!</h3>
+                    <div class="chip orange lighten-5">
+                        Software Developer
                     </div>
-                    <div class="modal-body">
-                        <center>
-                            <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/1956764_10152476808463506_1406667069536783974_o.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle">
-                            <h3 class="media-heading">Luis Juan Sanchez Padilla <small>Mexico</small></h3>
-                            <span><strong>Skills: </strong></span>
-                            <span class="label label-warning">Javascript</span>
-                            <span class="label label-warning">C++</span>
-                            <span class="label label-warning">Java</span>
-                            <span class="label label-info">Git</span>
-                            <span class="label label-success">Windows</span>
-                            <span class="label label-success">OSX</span>
-                            <span class="label label-success">Linux</span>
-                        </center>
-                        <hr>
-                        <center>
-                            <p class="text-center">
-                                <strong>Bio: </strong><br>
-                                This is me
-                            </p>
-                            <br>
-                            <button type="button" onclick="window.location.href='https://www.facebook.com/ljohnny17'" target="_blank" class="btn social-icon facebook btn-circle"><a class=" social-icon facebook"><span class="fa fa-facebook"></span></a></button>
-                            <button type="button" onclick="window.location.href='https://twitter.com/JohnnySanPad'" class="btn social-icon twitter btn-circle"><a class="social-icon twitter"><span class="fa fa-twitter"></span></a></button>
-                            <button type="button" onclick="window.location.href='https://github.com/luisjuansp'" class="btn social-icon github btn-circle"><a class="social-icon github"><span class="fa fa-github-alt"></span></a></button>
-                            <button type="button" onclick="window.location.href='https://google.com/+LuisJuanSanchezPadilla'" class="btn social-icon google-plus btn-circle"><a  class="social-icon google-plus"><span class="fa fa-google-plus"></span></a></button>
-                            <button type="button" onclick="window.location.href='https://www.linkedin.com/pub/luis-s%C3%A1nchez/84/403/573'" class="btn social-icon linkedin btn-circle"><a class="social-icon linkedin"><span class="fa fa-linkedin"></span></a></button>
-                        </center>
+                    <div class="chip orange lighten-5">
+                        Gamer
                     </div>
-                    <div class="modal-footer">
-                        <center>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </center>
+                    <div class="chip orange lighten-5">
+                        Taco killer
+                    </div> 
+                    <div class="card-panel orange lighten-4"> 
+                        Undergrad CS student, like to solve problems, enjoy the ride, and tell jokes in the wrong moments
                     </div>
-                </div>
-            </div>
-        </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="ChoiceMaker">
-                    <center>
-                        <br><button type="button" class="btn btn-success" onClick="javascript:window.location.href='http://luisjuansp.github.io/choicemaker/'">Go to ChoiceMaker</button>
-                    </center>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="Straws">
-                    <center>
-                        <br><button type="button" class="btn btn-success" onClick="javascript:window.location.href='http://luisjuansp.github.io/straws/'">Go to Straws</button>
-                    </center>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="TD">
-                    <img class="img-responsive center-block" alt="Responsive image" src="images/SWTDMain.png">
-                </div>
-            </div>
-        </div>
+                </td>
+                <td>
+                    <img class="circle responsive-img z-depth-1" alt="" src="images/selfie.png">
+                </td>
+            </tr>
+        </table>
     </div>
+
+    <div class="containter">
+        <div class="section">
+            <h3 class="center-align">Top Projects</h3>
+            <div class="row">
+
+                <div class="col s4">
+                    <div class="card orange lighten-1 hoverable">
+                        <div class="card-content white-text">
+                            <p class="center-align card-title">Card Title</p>
+                            <table>
+                                <tr>
+                                    <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                    <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                    <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                                </tr>
+                            </table>
+                            <p  class="center-align">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card orange lighten-1 hoverable">
+                        <div class="card-content white-text">
+                            <p class="center-align card-title">Card Title</p>
+                            <table>
+                                <tr>
+                                    <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                    <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                    <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                                </tr>
+                            </table>
+                            <p  class="center-align">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card orange lighten-1 hoverable">
+                        <div class="card-content white-text">
+                            <p class="center-align card-title">Card Title</p>
+                            <table>
+                                <tr>
+                                    <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                    <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                    <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                                </tr>
+                            </table>
+                            <p  class="center-align">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="divider"></div>
+
+        <h3 class="center-align">Recent Projects</h3>
+        <div class="row">
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <h3 class="center-align">Interests</h3>
+        <div class="row">
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card orange lighten-1 hoverable">
+                    <div class="card-content white-text">
+                        <p class="center-align card-title">Card Title</p>
+                        <table>
+                            <tr>
+                                <td class="center"><i class="material-icons tiny">visibility</i>2</td>
+                                <td class="center"><i class="material-icons tiny">star</i>2</td>
+                                <td class="center"><i class="material-icons tiny">call_split</i>2</td>
+                            </tr>
+                        </table>
+                        <p  class="center-align">
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="divider"></div>
+
+    <div class="fixed" style="top: 10px; left: 10px;">
+        <a class="btn-floating btn-large waves-effect waves-light red button-collapse" data-activates="slide-out"><i class="material-icons">menu</i></a>
+    </div>
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
